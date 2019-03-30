@@ -1,0 +1,444 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : 21 Mar, 2019, 4:56:44 PM
+    Author     : shukla
+*/
+html {
+    overflow: scroll;
+    overflow-x: hidden;
+}
+::-webkit-scrollbar {
+    width: 0px;  /* remove scrollbar space */
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+/* optional: show position indicator in red */
+::-webkit-scrollbar-thumb {
+    background: #FF0000;
+}
+.landing-page {
+    height: 100vh;
+    min-height: 500px;
+    /*  background-image: url('https://source.unsplash.com/BtbjCFUvBXs/1920x1080');*/
+    background-image: url('../images/background_image.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+/* css from https://codepen.io/muladamai/pen/GZaRxK */
+.card {
+    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12);
+}
+.card {
+    margin-top: 10px;
+    box-sizing: border-box;
+    border-radius: 2px;
+    background-clip: padding-box;
+}
+.card span.card-title {
+    color: #fff;
+    font-size: 24px;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+.card-text{  
+    color: #606060;
+}
+.card-color{
+    background-color:  #58D5C9!important;
+}
+.card-image{
+    background: url(../images/image03.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.card-image1{
+    background: url(../images/image01.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+.card .hover-card:hover{
+    box-shadow: -1px 10px 29px 0px rgba(0,0,0,0.8);
+    transition: box-shadow 0.6s ease-in-out;
+}
+.font-weight-text{
+    font-weight:500;
+}
+.font-weight-heading{
+    font-weight:400;
+}
+.font-weight-date{
+    font-weight:600;
+}
+.left-border {
+    border-left: 3px solid #42C0B3 !important;
+}
+.bag-icon{
+    font-size: 25px;
+}
+.skills-background{
+    background-color: #eeefea;
+}
+.progress-status {
+    -webkit-box-shadow: none;
+    height: .25rem;
+    overflow: hidden;
+    margin-bottom: 1rem;
+    background-color: #eee;
+}
+.progress-bar {
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    background-color: #007bff;
+    transition: width .6s ease;
+}
+.progress-status .progress-bar {
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    height: .25rem;
+    -webkit-border-radius: 0;
+    border-radius: 0;
+    background-color: #42C0B3;
+}
+.btn-primary {
+    background: #4f66a7!important;
+}
+.md-btn {
+    font-size: 16px;
+    display: inline-block;
+    min-width: 125px;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -ms-touch-action: manipulation;
+    touch-action: manipulation;
+    cursor: pointer;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 0;
+    border-radius: 2px;
+    background: #17a2b8;
+    color: #fff !important;
+    outline: 0;
+}
+.icon-decoration {
+    text-decoration: none;
+    color: black;
+}
+.header-font {
+    font-size:48px !important;
+}
+.circle-image{
+    border-radius: 28%!important;
+}
+::-webkit-input-placeholder {
+  text-align: right;
+  font-style: italic;
+  color: #42C0B3;
+  font-size: 13px;
+}
+
+::-moz-placeholder {
+  text-align: right;
+  font-style: italic;
+  color: #42C0B3;
+  font-size: 13px;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}
+
+button {
+  background: #ff4081;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  height: 36px;
+  padding: 0px 15px;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-align: center;
+  line-height: 36px;
+  vertical-align: middle;
+  font-family: 'Roboto', sans-serif;
+}
+
+button i {
+  color: #fff;
+}
+
+button[disabled] {
+  background: #ddd;
+  color: #757575;
+}
+
+.input:focus {
+  outline-width: 0px;
+}
+
+.input:invalid {
+  box-shadow: none;
+}
+
+form {
+  padding: 0 15px;
+}
+
+.input {
+  border-width: 0 0 1px 0;
+  border-color: #ccc;
+  border-style: solid;
+  width: 100%;
+  padding: 10px 5px 10px 0;
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+}
+
+.input-wrap {
+  position: relative;
+  margin: 20px auto 0;
+}
+
+.input-wrap:first-child {
+  margin-top: 0;
+}
+
+label {
+  top: 25px;
+  position: absolute;
+  left: 35px;
+  transition: all 0.8s ease-in-out;
+  color: #ccc;
+}
+
+.icon-class {
+  position: relative;
+  left: 0px;
+  top: 25px;
+  transition: all 0.8s ease-in-out;
+  color: #757575;
+}
+
+button i {
+  top: 0;
+  margin-right: 15px;
+}
+
+.icon-class.active {
+  top: 10px;
+  width: 100%;
+  height: 100%;
+  color: #42C0B3;
+  transition: all 0.8s;
+}
+
+label.active {
+  top: 10px;
+  transition: all 0.8s;
+  color: #42C0B3;
+}
+
+.icon-class.invalid,
+label.active.invalid {
+  color: #42C0B3;
+}
+
+.active textarea,
+.not textarea {
+  border-bottom: none;
+}
+
+.input-wrap:before {
+  content: ' ';
+  position: absolute;
+  font-size: 16px;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  -webkit-padding-before: 4px;
+  -webkit-padding-end: 3px;
+  -webkit-padding-after: 2px;
+  -webkit-padding-start: 4px;
+  text-align: center;
+  top: 20px;
+  background-color: transparent;
+  border-radius: 50%;
+  color: #fff;
+  font-family: "Material Icons";
+  transform: scale(0) rotate(90deg);
+  transform-origin: center;
+  transition: all 0.4s;
+}
+
+.input-wrap.valid:before {
+  content: '\e5ca';
+  background-color: #42C0B3;
+  transform: scale(1) rotate(0deg);
+  transition: all 0.8s;
+}
+
+.input-wrap.invalid:before {
+  content: '\e14c';
+  background-color: #42C0B3 !important;
+  transform: scale(1) rotate(0deg);
+  transition: all 0.8s;
+}
+
+.input-wrap.active:after,
+.input-wrap.not.active:after {
+  border-bottom: 2px solid #42C0B3;
+  bottom: 0;
+  left: 0;
+  content: "";
+  height: 0;
+  position: absolute;
+  width: 101%;
+  animation-name: bord;
+  animation-fill-mode: forwards;
+  animation-duration: 0.8s;
+  animation-timing-function: ease;
+}
+
+.input-wrap.not:after {
+  border-bottom: 2px solid #42C0B3;
+  bottom: 0;
+  left: 0;
+  content: "";
+  height: 0;
+  position: absolute;
+  width: 100%;
+  animation-name: bords;
+  animation-fill-mode: forwards;
+  animation-duration: 0.8s;
+  animation-timing-function: ease;
+}
+
+.input-wrap.active.invalid:after {
+  border-bottom: 2px solid #42C0B3;
+  bottom: 0;
+  left: 0;
+  content: "";
+  height: 0;
+  position: absolute;
+  width: 100%;
+  animation-name: bord;
+  animation-fill-mode: forwards;
+  animation-duration: 0.8s;
+  animation-timing-function: ease;
+}
+
+input[type="checkbox"] {
+  text-indent: -9999px;
+  vertical-align: text-top;
+}
+
+[type="checkbox"] + label:before,
+[type="checkbox"] + label:after {
+  content: '';
+  left: 0;
+  position: absolute;
+  z-index: 1;
+}
+
+[type="checkbox"]:not(:checked) + label:before {
+  width: 0;
+  height: 0;
+  border: 3px solid transparent;
+  left: 3px;
+  top: 0px;
+  transform: scale(0);
+  transform-origin: 100% 100%;
+  transition: all 0.8s;
+}
+
+[type="checkbox"]:not(:checked) + label:after {
+  height: 12px;
+  width: 12px;
+  background-color: #fff;
+  border: 1px solid #aaa;
+  top: 3px;
+  left: 4px;
+  transition: all 0.8s;
+  z-index: 0;
+}
+
+[type="checkbox"]:checked + label:before {
+  content: '\e876';
+  top: 0px;
+  left: 3px;
+  font-size: 16px;
+  color: #fff;
+  font-family: "Material Icons";
+  transform: scale(1);
+  transition: all 0.8s;
+}
+
+[type="checkbox"]:checked + label:after {
+  top: 3px;
+  left: 4px;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #ff4081;
+  background-color: #ff4081;
+  transition: all 0.8s;
+  z-index: 0;
+}
+
+input[type="checkbox"] + label {
+  position: static;
+  font-size: 12px;
+  color: #757575;
+  font-weight: 500;
+}
+/* End styles */
+@keyframes bord {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 101%;
+  }
+}
+
+@keyframes bords {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 0%;
+  }
+}
+
+@keyframes opacity {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.feedback-border{
+    border: 1px solid #ccc;
+}
+.small-font{
+    font-size: smaller;
+}
