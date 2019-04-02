@@ -1,0 +1,75 @@
+/*css from https://codepen.io/andreasstorm/pen/EVgVZK*/
+* {
+  box-sizing: border-box;
+}
+.media-social {
+  font-family: 'Lato', sans-serif;
+  background: linear-gradient(#f7f8fa, #e5eaee);
+}
+.fa-facebook {
+  color: #3b5998;
+}
+.fa-twitter {
+  color: #55acee;
+}
+.fa-instagram {
+  color: #3f729b;
+}
+.social > a {
+  position: relative;
+  display: inline-block;
+  margin: 40px;
+  width: 200px;
+  height: 200px;
+  cursor: pointer;
+}
+.social > a:hover .social-front {
+  transform: translateY(-45px);
+}
+.social > a.fb:hover .social-front {
+  transform: translate(-45px, -45px);
+}
+.social > a.ig:hover .social-front {
+  transform: translate(45px, -45px);
+}
+.social-front {
+  position: absolute;
+  z-index: 10;
+  width: 200px;
+  height: 200px;
+  border-radius: 3px;
+  background: #fff;
+  box-shadow: 0px 40px 40px rgba(0,0,0,0.06);
+  transition: all 0.3s ease-out;
+}
+.social-front i.fa {
+  display: block;
+  margin: 80px 0 30px 0;
+  font-size: 32px;
+}
+.social-front span {
+  color: #ccc;
+}
+.social-behind {
+  position: absolute;
+  z-index: -1;
+  top: 5px;
+  left: 5px;
+  width: 190px;
+  height: 190px;
+  padding-top: 160px;
+  border-radius: 3px;
+  color: #fff;
+  box-shadow: 0px 0px 40px #b6bec7, 0px 0px 120px #b6bec7;
+}
+.fb .social-behind {
+  padding-right: 40px;
+  background: #3b5998;
+}
+.tw .social-behind {
+  background: #55acee;
+}
+.ig .social-behind {
+  padding-left: 40px;
+  background: #3f729b;
+}
