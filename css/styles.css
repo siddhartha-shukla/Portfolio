@@ -428,7 +428,9 @@ input[type="checkbox"] + label {
 .small-font{
     font-size: smaller;
 }
-
+.radius-0{
+    border-radius: 0px !important;
+}
 /*css from https://codepen.io/Dreith/pen/OyRejE*/
 @media only screen and (min-width: 992px) {
     nav ul {
